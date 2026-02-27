@@ -1,10 +1,222 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>
-        <title>Legacy System (Still Working)</title>
-    </head>
-    <body>
-        <h1>Legacy System</h1>
-        <p>This is the old system that the redirect will point to.</p>
-    </body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Welcome to MegaStore Online - Your #1 Shopping Destination!</title>
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            font-family: Arial, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            width: 780px;
+            margin: 0 auto;
+        }
+        #header {
+            background-color: #003366;
+            color: #FFCC00;
+            padding: 10px;
+            text-align: center;
+        }
+        #header h1 {
+            margin: 5px 0;
+            font-size: 28px;
+        }
+        #navbar {
+            background-color: #336699;
+            padding: 5px;
+            text-align: center;
+        }
+        #navbar a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 5px 15px;
+            font-weight: bold;
+        }
+        #navbar a:hover {
+            background-color: #6699CC;
+        }
+        #sidebar {
+            float: left;
+            width: 180px;
+            background-color: #FFFFCC;
+            border: 2px solid #FFCC00;
+            padding: 10px;
+            margin: 10px 5px;
+        }
+        #content {
+            float: right;
+            width: 500px;
+            padding: 10px;
+            margin: 10px 5px;
+        }
+        #footer {
+            clear: both;
+            background-color: #003366;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            font-size: 11px;
+        }
+        .product {
+            border: 1px solid #CCCCCC;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #F5F5F5;
+        }
+        .product img {
+            border: 2px solid #003366;
+        }
+        .price {
+            color: #CC0000;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .sale {
+            background-color: #FF0000;
+            color: #FFFFFF;
+            padding: 2px 8px;
+            font-weight: bold;
+        }
+        blink {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+        marquee {
+            background-color: #FFFF00;
+            padding: 5px;
+            border: 2px dashed #FF0000;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+    <div id="header">
+        <h1>MegaStore Online</h1>
+        <p><i>Your Trusted Internet Shopping Experience Since 1999!</i></p>
+    </div>
+
+    <div id="navbar">
+        <a href="index.html">HOME</a> |
+        <a href="products.html">PRODUCTS</a> |
+        <a href="deals.html">HOT DEALS!!!</a> |
+        <a href="contact.html">CONTACT US</a> |
+        <a href="cart.html">SHOPPING CART (0)</a>
+    </div>
+
+    <marquee behavior="scroll" direction="left">
+        <b>*** SPECIAL OFFER *** Free shipping on orders over $50! *** LIMITED TIME ONLY ***</b>
+    </marquee>
+
+    <div id="sidebar">
+        <h3 style="background-color: #003366; color: #FFCC00; padding: 5px; margin: 0;">
+            CATEGORIES
+        </h3>
+        <ul>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Computers</a></li>
+            <li><a href="#">DVDs</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Music CDs</a></li>
+            <li><a href="#">Software</a></li>
+        </ul>
+
+        <h3 style="background-color: #003366; color: #FFCC00; padding: 5px; margin: 15px 0 0 0;">
+            <blink>NEW!</blink>
+        </h3>
+        <p style="font-size: 11px;">
+            <b>Sign up for our newsletter and receive exclusive deals!</b>
+        </p>
+        <form>
+            <input type="text" size="15" value="your@email.com"><br>
+            <input type="submit" value="Subscribe!">
+        </form>
+
+    </div>
+
+    <div id="content">
+        <h2 style="color: #003366;">Featured Products This Week!</h2>
+
+        <div class="product">
+            <table width="100%" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="120" valign="top">
+                        <img src="https://alexanderscheibler.github.io/legacy_site/img/DVD-Player.jpg" width="100" height="100" alt="DVD Player">
+                    </td>
+                    <td valign="top">
+                        <h3 style="margin: 0; color: #003366;">SuperTech DVD Player 3000</h3>
+                        <p><b>Product Code:</b> DVD-3000-X<br>
+                            <span class="sale">ON SALE!</span></p>
+                        <p>The latest in home entertainment technology! Plays all your favorite DVDs with crystal clear picture quality. Compatible with DVD-R and DVD-RW.</p>
+                        <p class="price">$129.99 <strike style="color: #666;">$179.99</strike></p>
+                        <p><input type="button" value="Add to Cart"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="product">
+            <table width="100%" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="120" valign="top">
+                        <img src="https://alexanderscheibler.github.io/legacy_site/img/MP3-Player.jpg" width="100" height="100" alt="MP3 Player">
+                    </td>
+                    <td valign="top">
+                        <h3 style="margin: 0; color: #003366;">MegaBeat MP3 Player - 128MB!</h3>
+                        <p><b>Product Code:</b> MP3-128-PRO</p>
+                        <p>Store up to 32 songs on this revolutionary portable music device! Includes headphones and USB cable. Runs on 1 AAA battery.</p>
+                        <p class="price">$89.99</p>
+                        <p><input type="button" value="Add to Cart"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="product">
+            <table cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="120" valign="top">
+                        <img src="https://alexanderscheibler.github.io/legacy_site/img/Webcam.jpg" width="100" height="100" alt="Webcam">
+                    </td>
+                    <td valign="top">
+                        <h3 style="margin: 0; color: #003366;">ClearVision USB Webcam</h3>
+                        <p><b>Product Code:</b> WEB-CAM-640</p>
+                        <p>Video chat with friends and family! Features amazing 640x480 resolution. Perfect for instant messenger and email. Plug and play installation.</p>
+                        <p class="price">$49.99</p>
+                        <p><input type="button" value="Add to Cart"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <center>
+            <p><b>We accept:</b><br>
+                Visa
+                Mastercard
+                Amex
+            </p>
+        </center>
+    </div>
+
+    <div id="footer">
+        <p><b>MegaStore Online</b> - Copyright &copy; 1999-2010 All Rights Reserved<br>
+            Best viewed in Internet Explorer 5.5 or Netscape Navigator 6.0 at 800x600 resolution<br>
+            <a href="#" style="color: #FFCC00;">Privacy Policy</a> |
+            <a href="#" style="color: #FFCC00;">Terms of Service</a> |
+            <a href="#" style="color: #FFCC00;">Admin</a></p>
+        <p style="font-size: 10px;">
+            <strong>Visitor Counter</strong><br>
+            You are visitor #458,392!
+        </p>
+    </div>
+
+</div>
+
+</body>
 </html>
